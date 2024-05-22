@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Vaibhav Kumar Singh</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+                /* Navigation Bar Styles */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.dark-mode .navbar {
+    background-color: #222;
+}
+
+.dark-mode .navbar a {
+    color: #ddd;
+}
+
+.dark-mode .navbar a:hover {
+    background-color: #444;
+    color: white;
+}
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .section {
+            margin: 20px 0;
+        }
+        .section h2 {
+            border-bottom: 2px solid #00aaff;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .section ul li {
+            margin: 10px 0;
+        }
+        .contact-info a {
+            color: #00aaff;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        .dark-mode {
+            background-color: #333;
+            color: #fff;
+        }
+        .dark-mode .container {
+            background: #444;
+            color: #fff;
+        }
+        .dark-mode .header h1,
+        .dark-mode .section h2,
+        .dark-mode .contact-info a {
+            color: #00aaff;
+        }
+        .toggle-button {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            padding: 10px 20px;
+            background-color: #00aaff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .toggle-button:focus {
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="aboutme.html">About Me</a>
+        <a href="gallary.html">Gallery</a>
+        <a href="#updates">Updates</a>
+        <a href="download.html">Downloads</a>
+        <a href="#blog">Blog</a>
+        <a href="#career">Career</a>
+    </div>
+    <button class="toggle-button" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    <div class="container">
+        <div class="header">
+            <h1>About Me</h1>
+        </div>
+        <div class="section">
+            <h2>Introduction</h2>
+            <p>A motivated BBA student specializing in Data Science, with project management experience and proficiency in MS Excel. Skilled in data analysis and communication, with a strong focus on leveraging data insights and understanding customer behavior.</p>
+        </div>
+        <div class="section">
+            <h2>Professional Skills</h2>
+            <p>Experienced in conducting market research, competitor analysis, and trend analysis to inform and enhance marketing strategies, contributing to business success.</p>
+        </div>
+        <div class="section">
+            <h2>Current Goals</h2>
+            <p>Currently looking for an internship opportunity to apply my skills in data science and project management, specifically in the development of ERP applications for government hospitals.</p>
+        </div>
+        <div class="section">
+            <h2>Hobbies and Interests</h2>
+            <p>I enjoy writing new fictional stories Reading novels,Chess,.</p>
+        </div>
+    </div>
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
+</body>
+</html>
