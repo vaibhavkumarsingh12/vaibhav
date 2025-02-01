@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcard App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Flashcard App</h1>
+        <div id="score">Score: 0/0</div>
+        <div class="input-area">
+            <textarea id="questionInput" placeholder="Paste your flashcards here in format:
+Flashcard 1
+Question: Your question
+Answer: Your answer"></textarea>
+            <button id="addCardBtn">Add Flashcards</button>
+        </div>
+        <div id="flashcard" class="card">
+            <div id="question">Question</div>
+            <div id="answer" class="hidden">Answer</div>
+            <div class="buttons">
+                <button id="correctBtn">✓ Correct</button>
+                <button id="wrongBtn">✗ Wrong</button>
+                <button id="hintBtn">💡 Hint</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sidebar for flashcards -->
+    <div id="sidebar">
+        <h3>Saved Flashcards</h3>
+        <div id="questionList"></div>
+        <div class="save-buttons">
+            <button id="saveBtn">💾 Save Session</button>
+            <button id="loadBtn">📂 Load Session</button>
+            <button id="downloadBtn">📥 Download All Flashcards</button>
+        </div>
+    </div>
+
+    <!-- Sidebar for wrong answers -->
+    <div id="wrongSidebar">
+        <h3>Wrong Questions</h3>
+        <div id="wrongList"></div>
+        <button id="clearWrongBtn">Clear All Wrong Questions</button>
+        <h3>Load Flashcard Set</h3>  <!-- Added heading -->
+        <div id="savedSetsList"></div>  <!-- Added div to display saved sets -->
+        <button id="loadBtn">Show Saved Sets</button> <!-- Changed button text -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
